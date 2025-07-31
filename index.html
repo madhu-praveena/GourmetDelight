@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gourmet Delight</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <div class="logo">Gourmet Delight</div>
+    <nav>
+      <ul>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#reservation">Reservation</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to Gourmet Delight</h1>
+  </section>
+
+  <section id="menu" class="menu-section">
+    <h2>Our Menu</h2>
+    <div class="menu-filters">
+      <button onclick="filterMenu('all')">All</button>
+      <button onclick="filterMenu('starter')">Starters</button>
+      <button onclick="filterMenu('main')">Main Course</button>
+      <button onclick="filterMenu('dessert')">Desserts</button>
+    </div>
+    <div class="menu-items">
+      <div class="menu-card starter">
+        <img src="istockphoto-481765835-612x612.jpg" alt="Starter"/>
+        <h3>Bruschetta</h3>
+        <p>Grilled bread with tomato & basil</p>
+      </div>
+      <div class="menu-card main">
+        <img src="Salmon-on-the-Grill.jpg" alt="Main Course"/>
+        <h3>Grilled Salmon</h3>
+        <p>With lemon butter sauce</p>
+      </div>
+      <div class="menu-card dessert">
+        <img src="Tiramisu-Espresso.jpg" alt="Dessert"/>
+        <h3>Tiramisu</h3>
+        <p>Classic Italian dessert</p>
+      </div>
+      <!-- Add more items similarly -->
+    </div>
+  </section>
+
+  <section id="gallery" class="gallery-section">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="  istockphoto-1829241109-612x612.jpg" alt="Dish 1">
+      <img src="pexels-reyhanalioglu-30157894.jpg" alt="Ambiance 2">
+      <img src="Food-best-hd-photos.jpg" alt="Dish 3">
+      <img src="pexels-jonathanborba-19986474.jpg" alt="Ambiance 4">
+    </div>
+  </section>
+
+  <section id="reservation" class="reservation-section">
+    <h2>Reserve a Table</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <input type="date" required />
+      <input type="time" required />
+      <textarea placeholder="Special Requests or Feedback" rows="4"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Gourmet Delight. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
